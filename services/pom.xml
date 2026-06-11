@@ -17,6 +17,10 @@
         <module>job-portal-user-service</module>
         <module>job-portal-company-service</module>
         <module>job-portal-job-service</module>
+        <module>job-portal-resume-service</module>
+        <module>job-portal-application-service</module>
+        <module>job-portal-preferences</module>
+        <module>job-portal-ai-service</module>
 
     </modules>
 

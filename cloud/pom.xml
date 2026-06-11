@@ -14,7 +14,15 @@
     <description>Cloud Infrastructure Modules - Discovery, Config Server, Gateway </description>
 
 <modules>
-
+<module>
+    job-portal-service-registry
+</module>
+    <module>
+        job-portal-config-server
+    </module>
+    <module>
+        job-portal-api-gateway
+    </module>
 </modules>
 
 </project>

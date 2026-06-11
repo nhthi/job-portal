@@ -44,7 +44,7 @@ public class JobController {
         return ResponseEntity.ok(jobService.getJobs(req));
     }
 
-    @GetMapping("/company/{id}")
+    @GetMapping("/company/{companyId}")
     public ResponseEntity<List<JobResponse>> getJobByCompany(
             @PathVariable Long companyId
     ) throws Exception {

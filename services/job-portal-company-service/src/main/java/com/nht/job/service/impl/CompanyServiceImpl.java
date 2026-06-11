@@ -33,7 +33,7 @@ public class CompanyServiceImpl implements CompanyService {
                     "Only one company per account is allowed!");
         }
 
-        if(companyRepository.existByName((req.getName()))){
+        if(companyRepository.existsByName((req.getName()))){
             throw new Exception("Company already exist. Please choose a different name.");
         }
 
@@ -107,7 +107,7 @@ public class CompanyServiceImpl implements CompanyService {
     public CompanyResponse getMyCompany(Long ownerId) throws Exception {
 
         Company company = companyRepository.findByOwnerId(ownerId).orElseThrow(
-                ()-> new Exception("company exist for owner "+ownerId)
+                ()-> new Exception("company not found for owner "+ownerId)
         );
 
         return CompanyMapper.toResponse(company);
@@ -129,7 +129,7 @@ public class CompanyServiceImpl implements CompanyService {
     public CompanyResponse updateCompany(Long companyId, Long ownerId, CompanyRequest req) throws Exception {
 
         Company company = getCompanyEntityById(companyId);
-        if(!company.getName().equals(req.getName())&&companyRepository.existByName(req.getName())){
+        if(!company.getName().equals(req.getName())&&companyRepository.existsByName(req.getName())){
             throw new Exception("Company already exists. Please choose a different name.");
         }
 

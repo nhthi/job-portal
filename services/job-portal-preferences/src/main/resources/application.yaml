@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: job-portal-preferences
+  config:
+    import: configserver:http://localhost:8888

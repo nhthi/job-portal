@@ -4,7 +4,118 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a1c423d-b436-44ea-8b67-24a0c0cc9739" name="Changes" comment="" />
+    <list default="true" id="8a1c423d-b436-44ea-8b67-24a0c0cc9739" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud/job-portal-api-gateway/src/main/java/com/nht/job/config/RouteConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud/job-portal-api-gateway/src/main/java/com/nht/job/jwt/JwtConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud/job-portal-api-gateway/src/main/java/com/nht/job/jwt/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/domain/AiShortListStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/domain/ApplicationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/domain/LanguageProficiency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/domain/ProficiencyLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/domain/ResumeTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/domain/ResumeVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/ApplicationNoteResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/ApplicationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/EducationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/LanguageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/PersonalInfoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/ProjectResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/ResumeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/ResumeSkillResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/nht/job/dto/response/WorkExperienceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/client/CompanyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/client/JobClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/client/ResumeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/controller/ApplicationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/controller/ApplicationNoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/mapper/ApplicationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/model/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/model/ApplicationNote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/payload/AddApplicationNoteRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/payload/CompanyApplicationFilterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/payload/CreateApplicationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/payload/UpdateApplicationStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/payload/WithdrawnApplicationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/repository/ApplicationNoteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/repository/ApplicationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/repository/ApplicationSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/service/ApplicationNoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/service/ApplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/service/impl/ApplicationNoteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-application-service/src/main/java/com/nht/job/service/impl/ApplicationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/client/CompanyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/controller/SavedJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/dto/response/SavedJobResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/mapper/PreferenceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/model/SavedJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/payload/SaveJobRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/repository/SavedJobRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/service/SavedJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-preferences/src/main/java/com/nht/job/service/impl/SavedJobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/EducationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/LanguageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/ResumeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/ResumeSkillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/controller/WorkExperienceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/mapper/ResumeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/mapper/WorkExperienceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/Education.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/PersonalInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/Resume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/ResumeSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/model/WorkExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/payload/AddEducationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/payload/AddLanguageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/payload/AddResumeSkillRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/payload/AddWorkExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/payload/CreateProjectRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/payload/CreateResumeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/repository/EducationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/repository/LanguageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/repository/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/repository/ResumeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/repository/ResumeSkillRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/repository/WorkExperienceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/EducationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/LanguageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/ResumeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/ResumeSkillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/WorkExperienceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/impl/EducationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/impl/LanguageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/impl/ResumeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/impl/ResumeSkillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-portal-resume-service/src/main/java/com/nht/job/service/impl/WorkExperienceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-company-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-company-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-company-service/src/main/java/com/nht/job/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-company-service/src/main/java/com/nht/job/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-company-service/src/main/java/com/nht/job/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-company-service/src/main/java/com/nht/job/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-company-service/src/main/java/com/nht/job/service/impl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-company-service/src/main/java/com/nht/job/service/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-company-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-company-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-job-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-job-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/JobPortalJobServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/JobPortalJobServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/controller/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/mapper/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/mapper/JobMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/service/impl/JobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-job-service/src/main/java/com/nht/job/service/impl/JobServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-job-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-job-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/nht/job/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/nht/job/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/nht/job/payload/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/java/com/nht/job/payload/SignupRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-portal-user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-portal-user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +130,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -37,6 +151,10 @@
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="ms-21" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -54,21 +172,30 @@
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.JobPortalCompanyApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.JobPortalApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobPortalApplicationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobPortalCompanyApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobPortalConfigServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.JobPortalJobServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobPortalPreferencesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobPortalResumeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobPortalServiceRegistryApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.JobPortalUserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/MicroService/job-portal-system&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MicroService/job-portal-system/services/job-portal-application-service/src/main/java/com/nht/job&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
@@ -83,6 +210,12 @@
       <recent name="com.nht.job.domain" />
       <recent name="com.nht.job.model" />
       <recent name="com.nht.job.dto.request" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MicroService\job-portal-system\services\job-portal-application-service\src\main\java\com\nht\job" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nht.job.dto.response" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -99,14 +232,22 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
+              <entry key="JobPortalApiGatewayApplication" value="STOPPED" />
+              <entry key="JobPortalApplicationServiceApplication" value="STOPPED" />
+              <entry key="JobPortalCompanyApplication" value="STOPPED" />
+              <entry key="JobPortalConfigServerApplication" value="STOPPED" />
               <entry key="JobPortalJobServiceApplication" value="STOPPED" />
+              <entry key="JobPortalPreferencesApplication" value="STOPPED" />
+              <entry key="JobPortalResumeServiceApplication" value="STOPPED" />
+              <entry key="JobPortalServiceRegistryApplication" value="STOPPED" />
+              <entry key="JobPortalUserServiceApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.JobPortalJobServiceApplication">
+  <component name="RunManager" selected="Spring Boot.JobPortalApiGatewayApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="job-portal-system" />
       <method v="2">
@@ -118,6 +259,29 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="JobPortalAiServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="job-portal-ai-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalAiServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobPortalApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="job-portal-api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobPortalApplicationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="job-portal-application-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalApplicationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JobPortalCompanyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="job-portal-company-service" />
@@ -126,10 +290,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobPortalConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="job-portal-config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JobPortalJobServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="job-portal-job-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalJobServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobPortalPreferencesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="job-portal-preferences" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalPreferencesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobPortalResumeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="job-portal-resume-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalResumeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobPortalServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="job-portal-service-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nht.job.JobPortalServiceRegistryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,6 +337,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.JobPortalAiServiceApplication" />
+      <item itemvalue="Spring Boot.JobPortalApiGatewayApplication" />
+      <item itemvalue="Spring Boot.JobPortalApplicationServiceApplication" />
+      <item itemvalue="Spring Boot.JobPortalCompanyApplication" />
+      <item itemvalue="Spring Boot.JobPortalConfigServerApplication" />
+      <item itemvalue="Spring Boot.JobPortalJobServiceApplication" />
+      <item itemvalue="Spring Boot.JobPortalPreferencesApplication" />
+      <item itemvalue="Spring Boot.JobPortalResumeServiceApplication" />
+      <item itemvalue="Spring Boot.JobPortalServiceRegistryApplication" />
+      <item itemvalue="Spring Boot.JobPortalUserServiceApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -177,10 +383,34 @@
       <workItem from="1780557754113" duration="596000" />
       <workItem from="1780579093529" duration="2558000" />
       <workItem from="1780582151526" duration="7979000" />
+      <workItem from="1780628479086" duration="6495000" />
+      <workItem from="1780712638299" duration="26983000" />
+      <workItem from="1780818447822" duration="17175000" />
+      <workItem from="1780894429794" duration="5362000" />
+      <workItem from="1780904737027" duration="622000" />
+      <workItem from="1780915494103" duration="4150000" />
+      <workItem from="1780970297828" duration="37000" />
+      <workItem from="1780984123863" duration="2016000" />
+      <workItem from="1781012191596" duration="146000" />
+      <workItem from="1781066597306" duration="598000" />
+      <workItem from="1781072334624" duration="19577000" />
+      <workItem from="1781153666801" duration="2000" />
+      <workItem from="1781162351002" duration="1224000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

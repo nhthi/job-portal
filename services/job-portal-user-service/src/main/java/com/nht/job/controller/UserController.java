@@ -33,7 +33,7 @@ public class UserController {
             ) throws Exception {
         return ResponseEntity.ok(userService.updateProfile(email,req));
     }
-    @PutMapping("/api/users/{userId}")
+    @GetMapping("/api/users/{userId}")
     public ResponseEntity<UserResponse> getUserById(
             @PathVariable Long userId
     ) throws Exception {

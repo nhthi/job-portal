@@ -3,11 +3,16 @@ package com.nht.job.payload;
 import com.nht.job.domain.UserRole;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class SignupRequest {
 
     @NotBlank(message = "Full name is mandatory")
@@ -23,7 +28,7 @@ public class SignupRequest {
 
     private String phone;
 
-    @NotBlank(message = "Role is mandatory")
+    @NotNull(message = "Role is mandatory")
     private UserRole role;
 
 

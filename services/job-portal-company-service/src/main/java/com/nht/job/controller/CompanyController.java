@@ -33,7 +33,7 @@ public class CompanyController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CompanyResponse> getCompanyByOd(
+    public ResponseEntity<CompanyResponse> getCompanyById(
             @PathVariable Long id
     ) throws Exception {
         return ResponseEntity.status(HttpStatus.OK)

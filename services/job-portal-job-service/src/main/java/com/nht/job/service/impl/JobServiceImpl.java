@@ -1,5 +1,6 @@
 package com.nht.job.service.impl;
 
+import com.nht.job.client.CompanyClient;
 import com.nht.job.domain.JobStatus;
 import com.nht.job.dto.request.JobRequest;
 import com.nht.job.dto.response.CompanyResponse;
@@ -38,6 +39,8 @@ public class JobServiceImpl implements JobService {
     private final JobCategoryService jobCategoryService;
     private final JobTagService jobTagService;
     private final JobSkillService jobSkillService;
+    private final CompanyClient companyClient;
+
     @Override
     public JobResponse createJob(Long employerId, JobRequest req) throws Exception {
 
@@ -51,8 +54,7 @@ public class JobServiceImpl implements JobService {
 
         //        toto fetch company By employer Id
 
-
-        Long companyId = 1L;
+        CompanyResponse companyResponse = companyClient.getMyCompany(employerId);
 
         Job job = Job.builder()
                 .title(req.getTitle())
@@ -60,7 +62,7 @@ public class JobServiceImpl implements JobService {
                 .requirements(req.getRequirements())
                 .responsibilities(req.getResponsibilities())
                 .benefits(req.getBenefits())
-                .companyId(companyId)
+                .companyId(companyResponse.getId())
                 .category(category)
                 .skills(skills)
                 .tags(tags)
@@ -199,10 +201,7 @@ public class JobServiceImpl implements JobService {
 
 
     private JobResponse convertToResponse(Job savedJob) {
-//to do: fetch company response
-        CompanyResponse companyResponse = CompanyResponse.builder()
-                .id(savedJob.getId())
-                .build();
+        CompanyResponse companyResponse = companyClient.getCompanyById(savedJob.getCompanyId());
         return JobMapper.toResponse(savedJob,companyResponse);
     }
 

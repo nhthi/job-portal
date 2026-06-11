@@ -1,0 +1,6 @@
+
+spring:
+  application:
+    name: job-portal-application-service
+  config:
+    import: configserver:http://localhost:8888
